@@ -1,0 +1,49 @@
+#score {
+    text-align: center;
+}
+
+#game {
+    width: 900px;
+    height: 350px;
+    border: 2px solid black;
+    margin: auto;
+    background-image: url("bg.jpg");
+    background-size: 900px 350px;
+}
+
+#mice {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 270px;
+    left: 10px;
+    background-image: url("mice.png");
+    background-size: cover;
+}
+
+#trap {
+    height: 45px;
+    width: 90px;
+    position: relative;
+    top: 220px;
+    left: 850px;
+    background-image: url("trap.png");
+    background-size: 90px 40px;
+    animation: trap 1.9s infinite linear;
+}
+
+@keyFrames trap{
+    0%{left: 850px;}
+    100%{left: -50px;}
+}
+
+.jump-animation{
+    animation: jump 0.6s;
+}
+
+@keyFrames jump{
+    0%{top: 270px;}
+    50%{top: 175px;}
+    75%{top: 175px;}
+    100%{top: 270px;}
+}
